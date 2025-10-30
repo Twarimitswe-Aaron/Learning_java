@@ -38,7 +38,6 @@ public class GenericObject{
         printLap.printDetails();
         PrintObject<Desktop> printDesktop=new PrintObject<>(new Desktop());
         printDesktop.printDetails();
-
         PrintObject<Computer> printComp=new PrintObject<>(new Computer());
         printComp.printDetails();
 
