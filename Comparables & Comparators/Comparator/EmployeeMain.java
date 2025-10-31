@@ -29,20 +29,22 @@ public class EmployeeMain {
         System.out.println("Employees list sorted by salary:");
         System.out.println(list);
 
-        Employee em1=new Employee("Twarimitswe", "Aaron", 18, 30000000);
-        Employee em2=new Employee("Amani", "Sam", 12, 10040000);
-
+        Employee em1 = new Employee("Twarimitswe", "Aaron", 18, 30000000);
+        Employee em2 = new Employee("Amani", "Sam", 12, 10040000);
 
         Set<Employee> empSet = new HashSet<>();
         empSet.add(em1);
         empSet.add(em2);
-        boolean var=em1.equals(em2);
-        System.out.println("Are em1 and em2 equal? "+var);
+        boolean var = em1.equals(em2);
+        System.out.println("Are em1 and em2 equal? " + var);
         System.out.println(empSet.size());
 
-        Map<Employee,String> empMap=new HashMap<>();
-        empMap.put(em1,"Developer");
-        empMap.put(em2,"Manager");
+        Map<Employee, String> empMap = new HashMap<>();
+        empMap.put(em1, "Developer");
+        empMap.put(em2, "Manager");
 
     }
+
+   
+
 }
