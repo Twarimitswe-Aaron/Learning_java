@@ -13,6 +13,7 @@ public class Calculator {
             System.out.println("=================");
             System.out.println("1.add");
             System.out.println("2.subtract");
+            System.out.println("3.divide");
             System.out.println("0.exit");
             option = scanner.nextInt();
 
@@ -28,11 +29,12 @@ public class Calculator {
                 a = scanner.nextInt();
                 System.out.println("Enter the second number");
                 b = scanner.nextInt();
-                System.out.println( "the difference between " + a + " and " + b + " is "+(a + b));
-                
+                System.out.println("the difference between " + a + " and " + b + " is " + (a + b));
 
             } else if (option == 0) {
                 condition = false;
+
+            } else if (option == 3) {
 
             } else {
                 System.out.println("Inter a valid option");
@@ -40,5 +42,7 @@ public class Calculator {
             System.out.println();
 
         }
+
     }
+
 }
