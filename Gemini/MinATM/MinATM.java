@@ -3,9 +3,14 @@ package Gemini.MinATM;
 public class MinATM {
     private double balance=1000.5;
     private double withdrawAmount=200;
+
+    public MinATM(double startingAmount) {
+        this.balance=startingAmount;
+    }
+    
     public static void main(String[] args) {
         int count=3;
-        MinATM ATM=new MinATM();
+        MinATM ATM=new MinATM(2000);
         while(count>0){
             ATM.withdraw(200);
             count--;
