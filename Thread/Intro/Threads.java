@@ -1,6 +1,6 @@
 package Thread.Intro;
 
-class Boy extends Thread {
+class Boy implements Runnable {
     public void run() {
         for (int i = 0; i < 20; i++) {
             System.out.println("Boy");
@@ -14,7 +14,7 @@ class Boy extends Thread {
 
 }
 
-class Girl extends Thread {
+class Girl implements Runnable {
     public void run() {
         for (int i = 0; i < 20; i++) {
             System.out.println("Girl");
@@ -30,10 +30,12 @@ class Girl extends Thread {
 
 public class Threads {
     public static void main(String args[]) {
-        Girl g = new Girl();
-        Boy b = new Boy();
-        b.start();
-        g.start();
+        Runnable g = new Girl();
+        Runnable b = new Boy();
+        Thread t1=new Thread(b);
+        Thread t2 =new Thread(g);
+        t1.start();
+        t2.start();
     }
 
 }
