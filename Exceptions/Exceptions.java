@@ -1,4 +1,4 @@
-package com.excetions;
+
 import java.util.Scanner;
 
 class Exceptions{
