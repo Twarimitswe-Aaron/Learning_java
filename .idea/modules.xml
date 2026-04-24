@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/OOP/OOP.iml" filepath="$PROJECT_DIR$/OOP/OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Regex/Regex.iml" filepath="$PROJECT_DIR$/Regex/Regex.iml" />
       <module fileurl="file://$PROJECT_DIR$/This Year.iml" filepath="$PROJECT_DIR$/This Year.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Design Patterns/untitled.iml" filepath="$PROJECT_DIR$/Design Patterns/untitled.iml" />
     </modules>
   </component>
 </project>
