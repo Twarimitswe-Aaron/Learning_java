@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../Design Patterns">
+      <sourceFolder url="file://$MODULE_DIR$/../Design Patterns/Behavioural" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../Design Patterns/Creational" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../Design Patterns/src" isTestSource="false" />
     </content>

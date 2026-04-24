@@ -4,114 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02f344dc-984d-401d-bfe2-ecf12c382794" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Design Patterns/Creational/Singleton/Browser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/Creational/Singleton/TestMani.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Design Patterns/untitled.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP/OOP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Regex/Regex.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collections/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Collections/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collections/.idea/Collections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Collections/.idea/Collections.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collections/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Collections/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collections/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Collections/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collections/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Collections/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collections/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Collections/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collections/List/Fruits.java" beforeDir="false" afterPath="$PROJECT_DIR$/Collections/List/Fruits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparables &amp; Comparators/CollectionEtude.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comparables &amp; Comparators/CollectionEtude.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparable/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparable/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparable/EmployeeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparable/EmployeeMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparable/SortBySalary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparable/SortBySalary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparator/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparator/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparator/EmployeeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparator/EmployeeMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparator/SortAge.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comparables &amp; Comparators/Comparator/SortAge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/.idea/Exceptions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/.idea/Exceptions.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/AgeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/AgeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/Exceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/Exceptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formatting/PrintFormattingDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Formatting/PrintFormattingDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemini/Calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gemini/Calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemini/MinATM/MinATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gemini/MinATM/MinATM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenericType/EmployeeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenericType/EmployeeMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenericType/Object/GenericObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenericType/Object/GenericObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenericType/Primitives/GenericAdder.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenericType/Primitives/GenericAdder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenericType/Primitives/GenericMaxFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenericType/Primitives/GenericMaxFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenericType/Primitives/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenericType/Primitives/Print.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenericType/Primitives/PrinterMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenericType/Primitives/PrinterMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenericType/Primitives/SchoolSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenericType/Primitives/SchoolSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Average.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Average.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Days.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Days.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Even.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Even.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Factorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Fibbonaci.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Fibbonaci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/MaximumElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/MaximumElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/OddsAndEvens.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/OddsAndEvens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Prime.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Prime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Print10.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Print10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/ReverseArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/ReverseArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/SearchInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/SearchInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Sum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/Table5.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/Table5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise/VowelOrConsonants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise/VowelOrConsonants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise1/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise1/.idea/Exercise1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise1/.idea/Exercise1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise1/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise1/Inheritance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise1/Inheritance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise1/ObjectCasting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise1/ObjectCasting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise1/StaticKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise1/StaticKeyword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Exercise1/SuperKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Exercise1/SuperKeyword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP/Abstraction/Payement.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP/Abstraction/Payement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP/Inheritance/Interface/Multiplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP/Inheritance/Interface/Multiplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP/Inheritance/Interface/MultiplierMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP/Inheritance/Interface/MultiplierMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Regex/Intro/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/Regex/Intro/Regex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/BufferedStreams/BufferedStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/BufferedStreams/BufferedStreams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/ByteStreams/ByteStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/ByteStreams/ByteStreams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/CharacterStream/CharacterStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/CharacterStream/CharacterStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/DataStreams/StudentMarks.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/DataStreams/StudentMarks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/Delimiter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/Delimiter2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/EmployeeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/EmployeeMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/FileScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/FileScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/IOStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/IOStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/NumberFormatting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/NumberFormatting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/ObjectStreams/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/ObjectStreams/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/ObjectStreams/ObjectStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/ObjectStreams/ObjectStreams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/Primitives.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/Primitives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/Printing.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/Printing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/Scanner/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/Scanner/Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/Stream.java" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/Stream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/Streams.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/Streams.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/out/production/Streams/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/out/production/Streams/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/out/production/Streams/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/out/production/Streams/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/out/production/Streams/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/out/production/Streams/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/out/production/Streams/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/out/production/Streams/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/out/production/Streams/Streams.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/out/production/Streams/Streams.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/out/production/Streams/stream.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/out/production/Streams/stream.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streams/stream.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Streams/stream.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/This Year.iml" beforeDir="false" afterPath="$PROJECT_DIR$/This Year.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/FrameWork/Excecutor/CallableTaskMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/FrameWork/Excecutor/CallableTaskMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/FrameWork/Excecutor/ExecutorFrameworkDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/FrameWork/Excecutor/ExecutorFrameworkDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/FrameWork/Excecutor/ReturnValueExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/FrameWork/Excecutor/ReturnValueExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/Intro/LambdaVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/Intro/LambdaVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/Intro/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/Intro/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/Intro/Threads.java" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/Intro/Threads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/ProducerConsumer/ProducerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/ProducerConsumer/ProducerConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/ProducerConsumer/ProducerConsumerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/ProducerConsumer/ProducerConsumerMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="02f344dc-984d-401d-bfe2-ecf12c382794" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,6 +27,7 @@
     "Application.TestMani.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
