@@ -40,6 +40,7 @@ public class LibraryService {
 
     // Borrow a book (synchronized to prevent two librarians from issuing the same book simultaneously)
     public synchronized boolean borrowBook(int memberId, String isbn) {
+        String checkBorrowedQuery = "SELECT 1 FROM borrowing_records WHERE member_id = ? AND isbn = ? AND return_date IS NULL";
         String countQuery = "SELECT COUNT(*) AS borrowed_count FROM borrowing_records WHERE member_id = ? AND return_date IS NULL";
         String updateBookQuery = "UPDATE books SET is_available = 0 WHERE isbn = ? AND is_available = 1";
         String insertRecordQuery = "INSERT INTO borrowing_records (member_id, isbn, borrow_date) VALUES (?, ?, date('now'))";
@@ -47,6 +48,18 @@ public class LibraryService {
         try (Connection conn = DatabaseConnection.getConnection()) {
             // Start transaction
             conn.setAutoCommit(false);
+
+            // 0. Check if this specific user already borrowed the book
+            try (PreparedStatement pstmt = conn.prepareStatement(checkBorrowedQuery)) {
+                pstmt.setInt(1, memberId);
+                pstmt.setString(2, isbn);
+                try (ResultSet rs = pstmt.executeQuery()) {
+                    if (rs.next()) {
+                        System.out.println("You have already borrowed this book (ISBN: " + isbn + ").");
+                        return false;
+                    }
+                }
+            }
 
             // 1. Check if member has 5 or more books
             try (PreparedStatement pstmt = conn.prepareStatement(countQuery)) {
