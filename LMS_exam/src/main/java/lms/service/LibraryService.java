@@ -1,7 +1,10 @@
 package lms.service;
 
 import lms.dao.DatabaseConnection;
+import lms.exception.BookNotFoundException;
+import lms.exception.UserNotFoundException;
 import lms.models.Book;
+import lms.models.Member;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -230,7 +233,7 @@ public class LibraryService {
         }
     }
 
-    public int getMemberIdByName(String name) {
+    public int getMemberIdByName(String name) throws UserNotFoundException {
         String query = "SELECT member_id FROM members WHERE name = ?";
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(query)) {
@@ -238,12 +241,14 @@ public class LibraryService {
             try (ResultSet rs = pstmt.executeQuery()) {
                 if (rs.next()) {
                     return rs.getInt("member_id");
+                } else {
+                    throw new UserNotFoundException("User '" + name + "' not found in the system.");
                 }
             }
         } catch (SQLException e) {
             System.err.println("Error finding member by name: " + e.getMessage());
+            throw new UserNotFoundException("Database error while looking up user.");
         }
-        return -1;
     }
 
     public boolean isBookExists(String isbn) {
@@ -257,6 +262,22 @@ public class LibraryService {
         } catch (SQLException e) {
             System.err.println("Error validating book: " + e.getMessage());
             return false;
+        }
+    }
+
+    public void validateBookExists(String isbn) throws BookNotFoundException {
+        String query = "SELECT 1 FROM books WHERE isbn = ?";
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(query)) {
+            pstmt.setString(1, isbn);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (!rs.next()) {
+                    throw new BookNotFoundException("Book with ISBN '" + isbn + "' does not exist.");
+                }
+            }
+        } catch (SQLException e) {
+            System.err.println("Error validating book: " + e.getMessage());
+            throw new BookNotFoundException("Database error while validating book.");
         }
     }
 

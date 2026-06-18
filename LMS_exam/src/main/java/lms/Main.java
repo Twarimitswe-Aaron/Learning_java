@@ -24,7 +24,7 @@ public class Main {
 
         // Initialize Database Schema and sample data
         DatabaseConnection.initializeDatabase();
-        seedData();
+        // seedData(); // Removed so it stops wiping out your data every time you run it!
 
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
@@ -199,9 +199,11 @@ public class Main {
             return; // go back to main menu
         }
 
-        int memberId = libraryService.getMemberIdByName(name);
-        if (memberId == -1) {
-            System.out.println("User not found. Registration required. Please register first from the Main Menu.");
+        int memberId;
+        try {
+            memberId = libraryService.getMemberIdByName(name);
+        } catch (lms.exception.UserNotFoundException e) {
+            System.out.println(e.getMessage() + " Please register first from the Main Menu.");
             return;
         }
 
@@ -280,8 +282,10 @@ public class Main {
                 System.out.println("    Validation failed: ISBN must be in the format 'ISBN-XXX' (e.g. ISBN-001).");
                 continue;
             }
-            if (!libraryService.isBookExists(isbn)) {
-                System.out.println("    --> Book with ISBN '" + isbn + "' does not exist. Try again.");
+            try {
+                libraryService.validateBookExists(isbn);
+            } catch (lms.exception.BookNotFoundException e) {
+                System.out.println("    --> " + e.getMessage() + " Try again.");
                 continue;
             }
             break;
@@ -309,8 +313,10 @@ public class Main {
                 System.out.println("    Validation failed: ISBN must be in the format 'ISBN-XXX' (e.g. ISBN-001).");
                 continue;
             }
-            if (!libraryService.isBookExists(isbn)) {
-                System.out.println("    --> Book with ISBN '" + isbn + "' does not exist. Try again.");
+            try {
+                libraryService.validateBookExists(isbn);
+            } catch (lms.exception.BookNotFoundException e) {
+                System.out.println("    --> " + e.getMessage() + " Try again.");
                 continue;
             }
             break;
@@ -507,7 +513,7 @@ public class Main {
         int newMemberId = libraryService.registerMember(name);
         if (newMemberId != -1) {
             System.out.println("--> Successfully registered! Your new Member ID is: " + newMemberId);
-            System.out.println("--> Please use this ID to login as a Borrower.");
+            System.out.println("--> Please use your Name to login as a Borrower.");
         } else {
             System.out.println("--> Registration failed. Please try again.");
         }
@@ -543,8 +549,10 @@ public class Main {
                 System.out.println("        Validation failed: ISBN must be in the format 'ISBN-XXX' (e.g. ISBN-001).");
                 continue;
             }
-            if (!libraryService.isBookExists(isbn)) {
-                System.out.println("        --> Book with ISBN '" + isbn + "' does not exist. Try again.");
+            try {
+                libraryService.validateBookExists(isbn);
+            } catch (lms.exception.BookNotFoundException e) {
+                System.out.println("        --> " + e.getMessage() + " Try again.");
                 continue;
             }
             break;
@@ -599,8 +607,10 @@ public class Main {
                 System.out.println("        Validation failed: ISBN must be in the format 'ISBN-XXX' (e.g. ISBN-001).");
                 continue;
             }
-            if (!libraryService.isBookExists(isbn)) {
-                System.out.println("        --> Book with ISBN '" + isbn + "' does not exist. Try again.");
+            try {
+                libraryService.validateBookExists(isbn);
+            } catch (lms.exception.BookNotFoundException e) {
+                System.out.println("        --> " + e.getMessage() + " Try again.");
                 continue;
             }
             break;
