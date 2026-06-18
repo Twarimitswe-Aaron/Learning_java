@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class EmployeeMain
+public class StreamEmployeeMain
 {
     public  static void main(String[] args){
         Employee em=new Employee("Art","zero");

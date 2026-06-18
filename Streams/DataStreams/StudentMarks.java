@@ -1,3 +1,5 @@
+package DataStreams;
+
 import java.io.*;
 
 public class StudentMarks {

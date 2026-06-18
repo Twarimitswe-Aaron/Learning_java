@@ -1,10 +1,9 @@
-import javax.xml.transform.Source;
 import java.io.*;
 import java.util.Scanner;
 
 public class Stream {
     public static void main(String[] args){
-        File file=new File("D:\\Documents\\Notes2\\JAVA\\programs\\This Year\\Streams\\stream.txt");
+
 //        try(PrintWriter writer=new PrintWriter(new FileWriter(file,true))){
 //            writer.println("wakeup..");
 //            writer.println("still in java...");

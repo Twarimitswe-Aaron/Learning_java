@@ -9,7 +9,7 @@ class Delimiter2{
         Scanner scan = new Scanner(data);
 
         String token1 = scan.next(); // Honorine
-        String token2 = scan.next(); // ntago
+        scan.next(); // skip "ntago"
         scan.next(); // skip "yasinziriye"
         int token4 = scan.nextInt(); // 5
 

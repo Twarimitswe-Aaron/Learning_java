@@ -1,3 +1,5 @@
+package Gemini.MinATM;
+
 public class MinATM {
     private double balance=1000.5;
 

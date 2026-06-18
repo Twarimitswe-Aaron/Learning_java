@@ -94,7 +94,7 @@ This repository contains my comprehensive Java study notes and practical program
 
 ### GenericType
 
-- [`EmployeeMain.java`](GenericType/EmployeeMain.java) 🚀 *(Runnable)*
+- [`GenericEmployeeMain.java`](GenericType/GenericEmployeeMain.java) 🚀 *(Runnable)*
 
 #### Object
 
@@ -162,12 +162,25 @@ This repository contains my comprehensive Java study notes and practical program
 
 - [`Regex.java`](Regex/Intro/Regex.java) 🚀 *(Runnable)*
 
+## Sockets
+
+### Sockets
+
+#### MultiClient
+
+- [`MultiClientDemo.java`](Sockets/MultiClient/MultiClientDemo.java) 🚀 *(Runnable)*
+- [`MultiServer.java`](Sockets/MultiClient/MultiServer.java) 🚀 *(Runnable)*
+
+#### SingleClient
+
+- [`Client.java`](Sockets/SingleClient/Client.java) 🚀 *(Runnable)*
+- [`Server.java`](Sockets/SingleClient/Server.java) 🚀 *(Runnable)*
+
 ## Streams
 
 ### Streams
 
 - [`Delimiter2.java`](Streams/Delimiter2.java) 🚀 *(Runnable)*
-- [`EmployeeMain.java`](Streams/EmployeeMain.java)
 - [`FileHandler.java`](Streams/FileHandler.java) 🚀 *(Runnable)*
 - [`FileScanner.java`](Streams/FileScanner.java) 🚀 *(Runnable)*
 - [`IOStream.java`](Streams/IOStream.java) 🚀 *(Runnable)*
@@ -175,6 +188,7 @@ This repository contains my comprehensive Java study notes and practical program
 - [`Primitives.java`](Streams/Primitives.java)
 - [`Printing.java`](Streams/Printing.java) 🚀 *(Runnable)*
 - [`Stream.java`](Streams/Stream.java) 🚀 *(Runnable)*
+- [`StreamEmployeeMain.java`](Streams/StreamEmployeeMain.java)
 
 #### BufferedStreams
 

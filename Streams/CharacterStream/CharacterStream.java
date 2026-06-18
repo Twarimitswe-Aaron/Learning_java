@@ -1,3 +1,5 @@
+package CharacterStream;
+
 import java.io.*;
 
 public class CharacterStream {

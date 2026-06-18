@@ -1,3 +1,5 @@
+package Thread.ProducerConsumer;
+
 public class ProducerConsumerMain {
     public static void main(String[] args) {
         ProducerConsumer pc = new ProducerConsumer(10);
