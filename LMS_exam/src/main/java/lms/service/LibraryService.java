@@ -66,7 +66,7 @@ public class LibraryService {
                 pstmt.setInt(1, memberId);
                 try (ResultSet rs = pstmt.executeQuery()) {
                     if (rs.next() && rs.getInt("borrowed_count") >= 5) {
-                        System.out.println("Member " + memberId + " cannot borrow more than 5 books.");
+                        System.out.println("You cannot borrow more than 5 books at a time.");
                         return false;
                     }
                 }
@@ -77,7 +77,7 @@ public class LibraryService {
                 pstmt.setString(1, isbn);
                 int rowsUpdated = pstmt.executeUpdate();
                 if (rowsUpdated == 0) {
-                    System.out.println("Book " + isbn + " is not available for borrowing.");
+                    System.out.println("This book (ISBN: " + isbn + ") is currently not available for borrowing.");
                     conn.rollback();
                     return false;
                 }
@@ -118,7 +118,7 @@ public class LibraryService {
             }
 
             if (recordsUpdated == 0) {
-                System.out.println("No active borrowing record found for Member " + memberId + " and Book " + isbn);
+                System.out.println("You cannot return this book because you have not borrowed it.");
                 conn.rollback();
                 return false;
             }
@@ -130,7 +130,7 @@ public class LibraryService {
             }
 
             conn.commit();
-            System.out.println("Member " + memberId + " successfully returned book " + isbn);
+            System.out.println("You have successfully returned the book (ISBN: " + isbn + ").");
             return true;
 
         } catch (SQLException e) {

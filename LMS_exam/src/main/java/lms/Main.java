@@ -209,7 +209,7 @@ public class Main {
 
         boolean loggedIn = true;
         while (loggedIn) {
-            System.out.println("\n└── Borrower Menu (User: " + name + ", ID: " + memberId + ")");
+            System.out.println("\n└── Borrower Menu (User: " + name + ")");
             System.out.println("    ├── 1. List Available Books");
             System.out.println("    ├── 2. List Borrowed Books");
             System.out.println("    ├── 3. Borrow a Book");
@@ -293,7 +293,7 @@ public class Main {
 
         boolean success = libraryService.borrowBook(memberId, isbn);
         if (success) {
-            System.out.println("    --> Successfully borrowed book " + isbn + " for Member " + memberId);
+            System.out.println("    --> You have successfully borrowed the book (ISBN: " + isbn + ").");
         } else {
             System.out.println("    --> Failed to borrow book.");
         }
