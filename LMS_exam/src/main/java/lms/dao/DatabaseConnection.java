@@ -9,7 +9,11 @@ public class DatabaseConnection {
     private static final String URL = "jdbc:sqlite:library.db";
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL);
+        Connection conn = DriverManager.getConnection(URL);
+        try (Statement stmt = conn.createStatement()) {
+            stmt.execute("PRAGMA foreign_keys = ON;");
+        }
+        return conn;
     }
 
     public static void initializeDatabase() {
