@@ -1,12 +1,18 @@
 # Library Management System (LMS)
 
-A simplified Library Management System built using **Java 17**, **Maven**, and **SQLite**. This project demonstrates core Object-Oriented Programming (OOP) principles, multithreading using the `ExecutorService` framework, and database persistence using the standard `java.sql` (JDBC) API.
+Twarimitswe Aaron
+Year 2 B
+
+A robust, interactive Library Management System built using **Java 17**, **Maven**, and **SQLite**. This project demonstrates core Object-Oriented Programming (OOP) principles, relational database persistence using the standard `java.sql` (JDBC) API, custom global exception handling, and multithreading using the `ExecutorService` framework.
 
 ## Features
-- **Object-Oriented Encapsulation**: Clean encapsulation of `Book` and `Member` data models.
-- **Multithreading & Thread Safety**: Uses the `ExecutorService` to simulate multiple librarians processing book requests concurrently. Strict thread-safety is enforced via Java `synchronized` blocks and SQLite database transactions to prevent race conditions (e.g., preventing two librarians from checking out the exact same book simultaneously).
-- **Business Logic Constraints**: Enforces a strict limit where a single member cannot borrow more than 5 books at a given time.
-- **Data Persistence (JDBC)**: Utilizes `java.sql` components (`Connection`, `Statement`, `PreparedStatement`, `ResultSet`) to safely execute queries, track borrowing transactions, and update book availability.
+- **Interactive CLI Interface**: A fully interactive, menu-driven command-line interface featuring role-based access for Librarians and Borrowers.
+- **Robust Input Validation**: Includes continuous validation loops and regex (e.g., 4-digit year format, ISBN format constraints) that prevent application crashes and user frustration.
+- **Custom Global Exception Handling**: Uses a custom `lms.exception` package (`LibraryException`, `UserNotFoundException`, `BookNotFoundException`) to handle business logic errors gracefully without crashing or exposing database internals to the user.
+- **Data Persistence (JDBC)**: Utilizes `java.sql` components to safely execute queries, track borrowing transactions, and persistently save book and member records into an SQLite database (`library.db`). The database schema strictly enforces referential integrity (`PRAGMA foreign_keys = ON`).
+- **Comprehensive CRUD Operations**: Librarians can fully Create, Read, Update, and Delete both Books and Members safely.
+- **Multithreading & Thread Safety**: Features an automated concurrent simulation using `ExecutorService` to simulate multiple librarians processing book requests simultaneously. Strict thread-safety is enforced via Java `synchronized` blocks and SQLite database transactions to prevent race conditions.
+- **Business Logic Constraints**: Enforces limits such as preventing a member from borrowing more than 5 books, and ensuring a member cannot return a book they didn't borrow.
 
 ## Prerequisites
 To run this project, you will need:
@@ -30,15 +36,15 @@ mvn compile exec:java
 
 ### What Happens When You Run It?
 When you execute the program, the `Main` class will:
-1. Automatically create a local `library.db` SQLite database file in the project root.
-2. Initialize the database schema (`books`, `members`, `borrowing_records` tables).
-3. Seed the database with sample data.
-4. Launch a multithreaded simulation using `ExecutorService` with 5 threads.
-5. Simulate concurrent borrowing scenarios, including testing the 5-book limit and race conditions.
+1. Initialize the SQLite database schema (`books`, `members`, `borrowing_records` tables) if it doesn't already exist.
+2. Launch the **Main Menu**, prompting you to login as a Librarian or Borrower, or register as a new Member.
+3. Allow you to interactively perform Library tasks, safely saving all changes across application restarts.
+4. Provide an option to run the concurrent multi-threaded simulation.
 
 ## Project Structure
-- `src/main/java/lms/Main.java`: The main entry point and simulation runner.
-- `src/main/java/lms/models/`: Contains the `Book` and `Member` POJO classes.
-- `src/main/java/lms/dao/DatabaseConnection.java`: Manages the `java.sql.Connection` and database initialization.
-- `src/main/java/lms/service/LibraryService.java`: Houses the core JDBC queries and synchronized borrowing logic.
-- `src/main/java/lms/concurrent/BorrowTask.java`: A `Runnable` task that handles individual borrowing requests across threads.
+- `src/main/java/lms/Main.java`: The interactive console UI and entry point.
+- `src/main/java/lms/models/`: Contains the `Book` and `Member` data models.
+- `src/main/java/lms/dao/DatabaseConnection.java`: Manages the database connection and schema initialization.
+- `src/main/java/lms/service/LibraryService.java`: Houses the core JDBC queries, business logic, and synchronized transactions.
+- `src/main/java/lms/exception/`: Contains the custom global exception hierarchy for safe error routing.
+- `src/main/java/lms/concurrent/BorrowTask.java`: A `Runnable` task that handles automated borrowing requests across threads for the concurrent simulation.
