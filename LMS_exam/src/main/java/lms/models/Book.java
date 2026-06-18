@@ -15,7 +15,7 @@ public class Book {
         this.isAvailable = isAvailable;
     }
 
-    // Getters and Setters
+
     public String getIsbn() { return isbn; }
     public void setIsbn(String isbn) { this.isbn = isbn; }
 

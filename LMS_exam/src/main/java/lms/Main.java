@@ -22,10 +22,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("=== Library Management System ===");
 
-        // Initialize Database Schema and sample data
         DatabaseConnection.initializeDatabase();
-        // seedData(); // Removed so it stops wiping out your data every time you run it!
-
+     
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
@@ -196,7 +194,7 @@ public class Main {
 
         if (name.isEmpty()) {
             System.out.println("Invalid input. Name cannot be empty.");
-            return; // go back to main menu
+            return; 
         }
 
         int memberId;
@@ -332,7 +330,7 @@ public class Main {
 
     private static void runSimulation() {
         System.out.println("\n--- Starting Concurrent Borrowing Simulation ---");
-        ExecutorService executor = Executors.newFixedThreadPool(5); // 5 librarians
+        ExecutorService executor = Executors.newFixedThreadPool(5);
 
         Runnable[] tasks = {
             new BorrowTask(libraryService, 1, 1, "ISBN-001"),
@@ -381,12 +379,12 @@ public class Main {
         try (Connection conn = DatabaseConnection.getConnection();
              Statement stmt = conn.createStatement()) {
             
-            // Clean slate for testing
+          
             stmt.execute(clearRecords);
             stmt.execute(clearBooks);
             stmt.execute(clearMembers);
 
-            // Insert fresh data
+            
             stmt.execute(insertBooks);
             stmt.execute(insertMembers);
 

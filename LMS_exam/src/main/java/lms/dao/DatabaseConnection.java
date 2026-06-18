@@ -20,7 +20,7 @@ public class DatabaseConnection {
         try (Connection conn = getConnection();
              Statement stmt = conn.createStatement()) {
             
-            // Create books table
+           
             String createBooksTable = "CREATE TABLE IF NOT EXISTS books (" +
                     "isbn TEXT PRIMARY KEY," +
                     "title TEXT NOT NULL," +
@@ -30,14 +30,14 @@ public class DatabaseConnection {
                     ");";
             stmt.execute(createBooksTable);
 
-            // Create members table
+          
             String createMembersTable = "CREATE TABLE IF NOT EXISTS members (" +
                     "member_id INTEGER PRIMARY KEY," +
                     "name TEXT NOT NULL" +
                     ");";
             stmt.execute(createMembersTable);
 
-            // Create borrowing_records table
+          
             String createRecordsTable = "CREATE TABLE IF NOT EXISTS borrowing_records (" +
                     "record_id INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "member_id INTEGER," +
