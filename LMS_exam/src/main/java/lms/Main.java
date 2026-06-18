@@ -151,8 +151,15 @@ public class Main {
         if (availableBooks.isEmpty()) {
             System.out.println("No books currently available.");
         } else {
+            System.out.printf("%-15s | %-25s | %-20s | %-6s | %-10s%n", "ISBN", "Title", "Author", "Year", "Available");
+            System.out.println("-----------------------------------------------------------------------------------------");
             for (Book book : availableBooks) {
-                System.out.println(book);
+                System.out.printf("%-15s | %-25s | %-20s | %-6d | %-10s%n", 
+                        book.getIsbn(), 
+                        book.getTitle(), 
+                        book.getAuthor(), 
+                        book.getPublicationYear(), 
+                        book.isAvailable() ? "Yes" : "No");
             }
         }
     }
